@@ -1,0 +1,16 @@
+{
+  "name": "twinlight-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Dark theme based on Twilight, Monokai and IDLE",
+  "keywords": [
+    "syntax",
+    "theme",
+    "twinlight"
+  ],
+  "repository": "https://github.com/atom/twinlight-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
