@@ -96,6 +96,11 @@ atom-text-editor .search-results .marker.current-result .region,
     background-color: transparent;
   }
 
+  &.phpdoc {
+    color: @lighter-gray;
+    font-style: none;
+  }
+  
   /*
   &.other.special-method {
     color: @red;
@@ -220,11 +225,10 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @purple;
       font-style: italic;
     }
-
   }
 
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: @red;
   }
 
 }
@@ -257,15 +261,8 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @darker-blue;
   }
 
-  &.name.type {
-    color: @pink;
-    text-decoration: underline;
-  }
-
-  &.other.inherited-class {
-    color: @green;
-  }
-
+  &.name.type,
+  &.other.inherited-class,
   &.name.class, &.name.type.class {
     color: @pink;
     text-decoration: underline;
