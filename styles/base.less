@@ -100,16 +100,6 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @lighter-gray;
     font-style: none;
   }
-
-  /*
-  &.other.special-method {
-    color: @red;
-  }
-
-  &.other.unit {
-    color: @red;
-  }
-  */
 }
 
 .storage {
@@ -283,14 +273,6 @@ atom-text-editor .search-results .marker.current-result .region,
     &.pseudo-class {
       color: @light-orange;
     }
-
-    &.id {
-      color: @blue;
-    }
-  }
-
-  &.gfm {
-    color: @green;
   }
 
   &.definition {
@@ -326,6 +308,10 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .markup {
+  &.strike {
+    text-decoration: line-through;
+  }
+
   &.bold {
     color: @orange;
     font-weight: bold;
@@ -377,6 +363,52 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @blue;
     text-decoration: underline;
   }
+}
+
+/**
+ * Markdown
+ */
+.quote.gfm {
+   color: @green;
+   background-color: @greenbg;
+}
+
+.entity.gfm {
+    color: @green;
+}
+
+.heading.gfm,
+.heading-1.gfm {
+    color: #eee;
+}
+
+.heading-2.gfm {
+    color: #ddd;
+}
+
+.heading-3.gfm {
+    color: #ccc;
+}
+
+.italic.gfm {
+    font-style: italic;
+    color: @blue;
+}
+
+.bold.gfm {
+    color: @red;
+}
+
+.list.gfm {
+    color: @orange;
+}
+
+/**
+ * Emoji
+ */
+.emoji.start,
+.emoji.end {
+  color: @red;
 }
 
 /**
