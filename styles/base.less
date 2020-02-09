@@ -135,7 +135,7 @@ atom-text-editor[mini] .scroll-view {
 }
 
 .syntax--variable {
-  color: @blue;
+  color: @white;
 
   &.syntax--interpolation {
     color: darken(@blue, 10%);
@@ -145,7 +145,8 @@ atom-text-editor[mini] .scroll-view {
     color: @syntax-text-color;
   }
 
-  &.syntax--object {
+  &.syntax--object,
+  &.syntax--property {
     color: @cyan;
   }
 
