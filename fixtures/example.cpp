@@ -1,5 +1,3 @@
-
-
 #include "ContactsModel.h"
 #include "core/IdentityManager.h"
 #include "core/ContactsManager.h"

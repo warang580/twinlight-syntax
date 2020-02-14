@@ -2,16 +2,18 @@
 
 use Some\Namespace\Object;
 
-// base class with member properties and methods
+/**
+ * Some comment
+ */
 class Vegetable {
 
    var $edible;
    var $color;
 
-   function Vegetable($edible, $color="green")
+   function Vegetable($edible = true, $color = "green")
    {
        $this->edible = $edible;
-       $this->color = $color;
+       $this->color  = $color;
    }
 
    function is_edible()
