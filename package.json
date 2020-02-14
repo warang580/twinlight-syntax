@@ -2,11 +2,14 @@
   "name": "twinlight-syntax",
   "theme": "syntax",
   "version": "0.24.0",
-  "description": "Dark theme based on Twilight, Monokai and IDLE",
+  "description": "Dark theme based on Twilight, Monokai and IDLE using Material colors",
   "keywords": [
     "syntax",
     "theme",
-    "twinlight"
+    "twinlight",
+    "material",
+    "monokai",
+    "idle"
   ],
   "repository": "https://github.com/warang580/twinlight-syntax",
   "license": "MIT",
