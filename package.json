@@ -1,7 +1,7 @@
 {
   "name": "twinlight-syntax",
   "theme": "syntax",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "Dark theme based on Twilight, Monokai and IDLE using Material colors",
   "keywords": [
     "syntax",
