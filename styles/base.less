@@ -379,39 +379,52 @@ atom-text-editor[mini] .scroll-view {
 /**
  * Markdown
  */
-.syntax--quote.syntax--gfm {
-   color: @green;
-   background-color: @greenbg;
-}
 
-.syntax--entity.syntax--gfm {
-    color: @green;
-}
+.syntax--gfm {
+    &.syntax--quote {
+        color: @green;
+        // @NOTE: Atom handles MD quotes strangely so background is strange
+        /* background-color: @greenbg; */
+    }
 
-.syntax--heading.syntax--gfm,
-.syntax--heading-1.syntax--gfm {
-    color: #eee;
-}
+    &.syntax--entity {
+        color: @green;
+        background-color: @greenbg;
+    }
 
-.syntax--heading-2.syntax--gfm {
-    color: #ddd;
-}
+    &.syntax--heading,
+    &.syntax--heading-1 {
+        color: #fff;
+    }
 
-.syntax--heading-3.syntax--gfm {
-    color: #ccc;
-}
+    &.syntax--heading-2 {
+        color: #f5f5f5;
+    }
 
-.syntax--italic.syntax--gfm {
-    font-style: italic;
-    color: @blue;
-}
+    &.syntax--heading-3 {
+        color: #eee;
+    }
 
-.syntax--syntax--bold.syntax--syntax--gfm {
-    color: @red;
-}
+    &.syntax--italic {
+        font-style: italic;
+        color: @blue;
+    }
 
-.syntax--syntax--list.syntax--syntax--gfm {
-    color: @orange;
+    &.syntax--syntax--bold {
+        color: @red;
+    }
+
+    &.syntax--syntax--list {
+        color: @orange;
+    }
+
+    &.syntax--raw {
+        color: @light-orange;
+    }
+
+    &.syntax--table {
+        color: @cyan;
+    }
 }
 
 /**
